@@ -2,13 +2,26 @@
 <html>
 <head>
   <title>Demohp</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">algolabo</a>
+      </div>
+    </div>
+  </nav>
+  <%= yield %>
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        Copyright © 2016- algolabo All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

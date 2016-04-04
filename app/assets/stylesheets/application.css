@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding-top: 50px;
+}
+
+.jumbotron {
+  background-image: url("planet.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+
+footer {
+  margin-top: 20px;
+  min-height: 100px;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+}
+
+footer .copyright {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
