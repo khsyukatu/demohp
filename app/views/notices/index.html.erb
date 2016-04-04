@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="page-header text-center">お知らせ一覧</h1>
+  <p class="lead text-center">algolaboの最新のお知らせを一覧でご覧いただけます。</p>
+  <table class="table">
+    <% @notices.each do |notice| %>
+      <tr>
+        <td><%= notice.title %></td>
+        <td><%= link_to "表示", notice_path(notice), class:"btn btn-success" %></td>
+      </tr>
+  <% end %>
+  </table>
+</div>

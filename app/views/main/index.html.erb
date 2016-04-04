@@ -57,6 +57,18 @@
   <div class="text-center">
     <h2 class="page-header">お知らせ</h2>
     <div class="row">
+    <% @notices.each do |notice| %>
+      <div class="col-md-4">
+        <%= notice.created_at.strftime("%Y.%m.%d") %><br>
+        <%= notice.title %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+  <!--
+  <div class="text-center">
+    <h2 class="page-header">お知らせ</h2>
+    <div class="row">
       <div class="col-md-4">
         2016.4.5<br>
         ご利用人数が10人を超えました。
@@ -71,6 +83,7 @@
       </div>
     </div>
   </div>
+  -->
   <div class="text-center">
   <h2 class="page-header">About Us</h2>
     <div class="row">

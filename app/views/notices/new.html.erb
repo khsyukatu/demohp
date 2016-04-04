@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="page-header text-center">新規お知らせ作成</h1>
+<%= form_for(@notice) do |f| %>
+  
+  <div>
+    <label>お知らせタイトル：</label>
+      <%= f.text_field :title %>
+  </div>
+  <div>
+    <label>お知らせ内容：</label>
+      <%= f.text_area :body %>
+  </div>
+  
+  <%= f.submit class:"btn btn-success" %>
+<% end %>
+</div>
